@@ -694,7 +694,7 @@ use yii\helpers\Html;
                                                                     <?php endif; ?>
 
                                                                     <span style="text-decoration: none; color:<?= $soft2Color ?>;">
-                                                                        Powered by <a href="http://www.u-lab.fr/"  style="text-decoration: none; color: <?= $soft2Color ?>;">U-Lab</a> 
+                                                                        Développé par <a href="http://www.u-lab.fr/"  style="text-decoration: none; color: <?= $soft2Color ?>;">U-Lab</a> 
                                                                     </span>
 
                                                                 </td>
