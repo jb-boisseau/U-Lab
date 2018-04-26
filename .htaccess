@@ -38,3 +38,4 @@ RewriteRule .? %{ENV:BASE}/index.php [L]
     Order Allow,Deny
     Deny from All
 </FilesMatch>
+
