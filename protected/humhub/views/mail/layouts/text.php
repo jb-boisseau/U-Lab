@@ -7,4 +7,4 @@
 <?= Yii::t('base', 'Unsubscribe') ?>: <?= $url ?>
 <?php endif; ?>
 
-Powered by HumHub (http://www.humhub.org)
+Développé par <a href="http://U-Lab.fr">U-Lab</a>
