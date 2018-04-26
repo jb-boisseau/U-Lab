@@ -37,5 +37,6 @@ RewriteRule .? %{ENV:BASE}/index.php [L]
 <FilesMatch "composer.lock">
     Order Allow,Deny
     Deny from All
+    
 </FilesMatch>
 
