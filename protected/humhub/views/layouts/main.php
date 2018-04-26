@@ -20,7 +20,7 @@
         <!-- start: first top navigation bar -->
         <div id="topbar-first" class="topbar">
             <div class="container">
-                <div class="topbar-brand hidden-xs">
+                <div class="topbar-brand">
                     <?= \humhub\widgets\SiteLogo::widget(); ?>
                 </div>
 
