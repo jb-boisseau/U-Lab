@@ -1126,6 +1126,7 @@ img {
 }
 .img-rounded {
   border-radius: 6px;
+  display: block;
 }
 .img-thumbnail {
   display: inline-block;
