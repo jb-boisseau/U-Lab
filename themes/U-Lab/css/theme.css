@@ -554,13 +554,13 @@ input[type=select] {
 #topbar-second .nav>li.active>a {
     min-height: 47px
 }
-
+/*
 #topbar-second .nav>li>ul>li>a {
     border: 3px solid white;
     background-color: white;
     color: #555
 }
-
+*/
 #topbar-second .nav>li>ul>li>a {
     /*border: 3px solid white; modifié */
     background-color: white;
