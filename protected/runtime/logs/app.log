@@ -798,3 +798,195 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1524737218.637
     'REQUEST_TIME' => 1524737218
 ]
+2018-05-10 18:04:51 [::1][1][v7hmhratp6e4goqjpjih2rcfv5][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: humhub\modules\polls\models\Poll::show_result_after_close in C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('show_result_aft...')
+#1 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\components\ContentActiveRecord.php(159): yii\db\BaseActiveRecord->__get('show_result_aft...')
+#2 C:\xampp\htdocs\U-Lab\protected\modules\polls\models\Poll.php(119): humhub\modules\content\components\ContentActiveRecord->__get('show_result_aft...')
+#3 C:\xampp\htdocs\U-Lab\protected\modules\polls\widgets\views\_answer.php(29): humhub\modules\polls\models\Poll->isShowResult()
+#4 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\U-Lab\protected\modules\polls\widgets\views\entry.php(30): yii\base\View->render('_answer', Array)
+#8 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(humhub\modules\polls\widgets\WallEntry))
+#11 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Widget.php(234): yii\base\View->render('entry', Array, Object(humhub\modules\polls\widgets\WallEntry))
+#12 C:\xampp\htdocs\U-Lab\protected\modules\polls\widgets\WallEntry.php(30): yii\base\Widget->render('entry', Array)
+#13 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\widgets\WallEntry.php(261): humhub\modules\polls\widgets\WallEntry->run()
+#14 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\widgets\WallEntry.php(225): humhub\modules\content\widgets\WallEntry->getWallEntryViewParams()
+#15 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\components\ContentActiveRecord.php(283): humhub\modules\content\widgets\WallEntry->renderWallEntry()
+#16 C:\xampp\htdocs\U-Lab\protected\humhub\modules\stream\actions\Stream.php(324): humhub\modules\content\components\ContentActiveRecord->getWallOut(Array)
+#17 C:\xampp\htdocs\U-Lab\protected\humhub\modules\stream\actions\Stream.php(358): humhub\modules\stream\actions\Stream::renderEntry(Object(humhub\modules\polls\models\Poll), Array)
+#18 C:\xampp\htdocs\U-Lab\protected\humhub\modules\stream\actions\Stream.php(233): humhub\modules\stream\actions\Stream::getContentResultEntry(Object(humhub\modules\content\models\Content))
+#19 [internal function]: humhub\modules\stream\actions\Stream->run()
+#20 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\Action->runWithParams(Array)
+#22 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('stream', Array)
+#23 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#24 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#25 C:\xampp\htdocs\U-Lab\index.php(25): yii\base\Application->run()
+#26 {main}
+2018-05-10 18:04:50 [::1][1][v7hmhratp6e4goqjpjih2rcfv5][info][application] $_GET = [
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_BASE' => '/U-Lab'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'BASE' => '/U-Lab'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'hJDqWgOFjN5epL1Ml8GUUj8mwahQtEkRYpGtKFDbh9_MFq609vHK366O-Xl-G2t_fg_PfMAAH9UAzrakKM6x1Q=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/U-Lab/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'fr,fr-FR;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6'
+    'HTTP_COOKIE' => '_identity=ef4dc972c738013ccc8c0f2bd32bf72bd618a14e88f6d529384b97f008d0cb9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22f2536cf7-8204-4f54-9ece-97f33445d9b1%22%2C2592000%5D%22%3B%7D; PHPSESSID=v7hmhratp6e4goqjpjih2rcfv5; _csrf=068ea203f34cef4d14a5acf5e79a3e956dd1a2376c8e24c17dffa4a0e322308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H%86D%EE%F5tF%01%F0%2AD5%E9%DA%FF-A%29%0E%D4%90%B4V%C4b_%1B%8Cx%156%0A%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\Program Files (x86)\\Python36-32\\Scripts\\;C:\\Program Files (x86)\\Python36-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Common Files\\Avid;C:\\Program Files\\Common Files\\Avid;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;i:\\AOMEI Backupper;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jbboi\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\jbboi\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\jbboi\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jbboi\\AppData\\Local\\atom\\bin;C:\\Users\\jbboi\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jbboi\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\jbboi\\AppData\\Roaming\\npm;C:\\Users\\jbboi\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/U-Lab/index.php'
+    'REMOTE_PORT' => '56112'
+    'REDIRECT_URL' => '/U-Lab/dashboard/dashboard/stream'
+    'REDIRECT_QUERY_STRING' => 'mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/U-Lab/dashboard/dashboard/stream?mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/U-Lab/index.php'
+    'PHP_SELF' => '/U-Lab/index.php'
+    'REQUEST_TIME_FLOAT' => 1525968290.666
+    'REQUEST_TIME' => 1525968290
+]
+2018-05-10 18:06:11 [::1][1][v7hmhratp6e4goqjpjih2rcfv5][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: humhub\modules\polls\models\Poll::show_result_after_close in C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('show_result_aft...')
+#1 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\components\ContentActiveRecord.php(159): yii\db\BaseActiveRecord->__get('show_result_aft...')
+#2 C:\xampp\htdocs\U-Lab\protected\modules\polls\models\Poll.php(119): humhub\modules\content\components\ContentActiveRecord->__get('show_result_aft...')
+#3 C:\xampp\htdocs\U-Lab\protected\modules\polls\widgets\views\_answer.php(29): humhub\modules\polls\models\Poll->isShowResult()
+#4 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#7 C:\xampp\htdocs\U-Lab\protected\modules\polls\widgets\views\entry.php(30): yii\base\View->render('_answer', Array)
+#8 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(330): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(humhub\modules\polls\widgets\WallEntry))
+#11 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Widget.php(234): yii\base\View->render('entry', Array, Object(humhub\modules\polls\widgets\WallEntry))
+#12 C:\xampp\htdocs\U-Lab\protected\modules\polls\widgets\WallEntry.php(30): yii\base\Widget->render('entry', Array)
+#13 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\widgets\WallEntry.php(261): humhub\modules\polls\widgets\WallEntry->run()
+#14 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\widgets\WallEntry.php(225): humhub\modules\content\widgets\WallEntry->getWallEntryViewParams()
+#15 C:\xampp\htdocs\U-Lab\protected\humhub\modules\content\components\ContentActiveRecord.php(283): humhub\modules\content\widgets\WallEntry->renderWallEntry()
+#16 C:\xampp\htdocs\U-Lab\protected\humhub\modules\stream\actions\Stream.php(324): humhub\modules\content\components\ContentActiveRecord->getWallOut(Array)
+#17 C:\xampp\htdocs\U-Lab\protected\humhub\modules\stream\actions\Stream.php(358): humhub\modules\stream\actions\Stream::renderEntry(Object(humhub\modules\polls\models\Poll), Array)
+#18 C:\xampp\htdocs\U-Lab\protected\humhub\modules\stream\actions\Stream.php(233): humhub\modules\stream\actions\Stream::getContentResultEntry(Object(humhub\modules\content\models\Content))
+#19 [internal function]: humhub\modules\stream\actions\Stream->run()
+#20 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#21 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\Action->runWithParams(Array)
+#22 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('stream', Array)
+#23 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#24 C:\xampp\htdocs\U-Lab\protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#25 C:\xampp\htdocs\U-Lab\index.php(25): yii\base\Application->run()
+#26 {main}
+2018-05-10 18:06:10 [::1][1][v7hmhratp6e4goqjpjih2rcfv5][info][application] $_GET = [
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'REDIRECT_BASE' => '/U-Lab'
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'BASE' => '/U-Lab'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'hJDqWgOFjN5epL1Ml8GUUj8mwahQtEkRYpGtKFDbh9_MFq609vHK366O-Xl-G2t_fg_PfMAAH9UAzrakKM6x1Q=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/U-Lab/dashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'fr,fr-FR;q=0.9,en-US;q=0.8,en;q=0.7,es;q=0.6'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; _identity=ef4dc972c738013ccc8c0f2bd32bf72bd618a14e88f6d529384b97f008d0cb9ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A50%3A%22%5B1%2C%22f2536cf7-8204-4f54-9ece-97f33445d9b1%22%2C2592000%5D%22%3B%7D; PHPSESSID=v7hmhratp6e4goqjpjih2rcfv5; _csrf=068ea203f34cef4d14a5acf5e79a3e956dd1a2376c8e24c17dffa4a0e322308ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22H%86D%EE%F5tF%01%F0%2AD5%E9%DA%FF-A%29%0E%D4%90%B4V%C4b_%1B%8Cx%156%0A%22%3B%7D'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files\\Python36\\Scripts\\;C:\\Program Files\\Python36\\;C:\\Program Files (x86)\\Python36-32\\Scripts\\;C:\\Program Files (x86)\\Python36-32\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Program Files (x86)\\Common Files\\Avid;C:\\Program Files\\Common Files\\Avid;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Brackets\\command;C:\\Program Files\\nodejs\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;i:\\AOMEI Backupper;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jbboi\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts\\;C:\\Users\\jbboi\\AppData\\Local\\Programs\\Python\\Python36-32\\;C:\\Users\\jbboi\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jbboi\\AppData\\Local\\atom\\bin;C:\\Users\\jbboi\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jbboi\\AppData\\Local\\GitHubDesktop\\bin;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\jbboi\\AppData\\Roaming\\npm;C:\\Users\\jbboi\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.28 (Win32) OpenSSL/1.0.2l PHP/7.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/U-Lab/index.php'
+    'REMOTE_PORT' => '56257'
+    'REDIRECT_URL' => '/U-Lab/dashboard/dashboard/stream'
+    'REDIRECT_QUERY_STRING' => 'mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/U-Lab/dashboard/dashboard/stream?mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/U-Lab/index.php'
+    'PHP_SELF' => '/U-Lab/index.php'
+    'REQUEST_TIME_FLOAT' => 1525968370.782
+    'REQUEST_TIME' => 1525968370
+]
